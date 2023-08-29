@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/* Estilos generales para la calculadora */
+
 body {
   font-family: Arial, sans-serif;
   background-color: rgba(137, 137, 137, 0.462745098);
@@ -27,7 +26,7 @@ body {
   text-align: center;
 }
 
-/* Estilos para la pantalla de operación realizada y el resultado */
+
 .operacion, .resultado {
   background-color: #f7f7f7;
   padding: 10px;
@@ -41,7 +40,7 @@ body {
   font-size: 20px;
 }
 
-/* Estilos para los botones */
+
 .tecla {
   width: 80px;
   height: 80px;
@@ -64,10 +63,10 @@ body {
 }
 
 .igual:hover, .limpiar:hover {
-  background-color: #45a745;
+  background-color: #222222;
 }
 
-/* Estilos para el pie de página */
+
 footer {
   text-align: end;
   padding: 15px;
@@ -76,4 +75,4 @@ footer {
 .privado {
   color: #909090;
   font-size: 1rem;
-}/*# sourceMappingURL=styles.css.map */
+}

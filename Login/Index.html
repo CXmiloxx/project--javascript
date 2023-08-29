@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="registro">
+        <h1>REGISTRESE</h1>
+        <label>Nombre Completo</label>
+        <input type="text" id="nom">
+        <p id="errnom"></p>
+        <label>Contraseña</label>
+        <input type="password" id="passs">
+        <p id="errpasss"></p>
+        <button id="botR">Registrarse</button>
+    </div>
+    <div id="registroP" hidden>
+        <h1>Cree preguntas de confirmación</h1>
+        <label>Numero favorito</label>
+        <input id="p1" type="text">
+        <p id="errp1"></p>
+        <label>Animal favorito</label>
+        <input id="p2" type="text">
+        <p id="errp2"></p>
+        <label>Color favorito</label>
+        <input id="p3" type="text">
+        <p id="errp3"></p>
+        <button id="botRP">Confirmar</button>
+    </div>
+    <div id="captcha" hidden>
+        <h1>Captcha</h1>
+        <h3 id="capnum"></h3>
+        <input type="text" id="capinput">
+        <button id="capbot">Enviar</button>
+        <h2 id="caperr"></h2>
+    </div>
+    <div id="error" hidden>
+        <h1>Demasiados intentos fallidos</h1>
+    </div>
+    <div id="confirmacion" hidden>
+        <h1 id="bienvenido"></h1>
+        <label>Confirme su contraseña</label>
+        <input type="password" id="confpasss">
+        <br>
+        <br>
+        <button id="confbot">Confirmar</button>
+        <h1 id="conferr"></h1>
+    </div>
+    <div id="sesionIniciada" hidden>
+        <h1>Bienvenido al sistema</h1>
+    </div>
+    <div id="confP1" hidden>
+        <h1>Preguntas de confirmación</h1>
+        <label>Numero favorito</label>
+        <input id="inputp1" type="text">
+        <br>
+        <br>
+        <button id="butp1">Confirmar</button>
+    </div>
+    <div id="confP2" hidden>
+        <h1>Preguntas de confirmacion</h1>
+        <label>Animal favorito</label>
+        <input id="inputp2" type="text">
+        <br>
+        <br>
+        <button id="butp2">Confirmar</button>
+    </div>
+    <div id="confP3" hidden>
+        <h1>Preguntas de confirmacion</h1>
+        <label>Color favorito</label>
+        <input id="inputp3" type="text">
+        <br>
+        <br>
+        <button id="butp3">Confirmar</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
