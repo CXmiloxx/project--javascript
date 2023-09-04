@@ -77,3 +77,37 @@ footer {
     color: #909090;
     font-size: 1rem;
 }
+
+@media screen and (min-width: 390px) {
+
+    .container {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .tecla {
+        width: 62px;
+        height: 64px;
+        font-size: 18px;
+    }
+
+    .operacion, .resultado {
+        font-size: 38px;
+        color: #45a745;
+    }
+
+    .privado{
+        padding: 5%;
+        text-align: center;
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-heigth: 580px) {
+
+    .privado{
+        padding: 5%;
+        text-align: center;
+        font-size: 77px;
+    }
+}

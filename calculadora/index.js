@@ -11,7 +11,6 @@ document.querySelectorAll(".tecla").forEach((button) => {
 
         if (valor === "=") {
             try {
-                // Utilizar expresión regular para evaluar solo operaciones matemáticas seguras
                 if (/^[-+*/.\d\s()]+$/.test(parcial)) {
                     parcial = eval(parcial);
                     actualizarPantalla();
@@ -20,7 +19,7 @@ document.querySelectorAll(".tecla").forEach((button) => {
                     actualizarPantalla();
                 }
             } catch (error) {
-                parcial = "Error";
+                parcial = "hola";
                 actualizarPantalla();
             }
         } else if (valor === "AC") {

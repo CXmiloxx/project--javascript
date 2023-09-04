@@ -1,4 +1,20 @@
 body{
     background-color: gray;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.chuloVerde{
+    color: lightgreen;
+}
+.xRoja{
+    color: red;
+}
+label{
+    cursor: text;
+}
+button{
+    cursor: pointer;
 }
