@@ -1,0 +1,66 @@
+#principal, #ProductosNuevos {
+  font-family: Arial, sans-serif;
+  background-color: #665e5e;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#principal h1, #ProductosNuevos h1 {
+  color: #00A63F;
+  font-size: 2rem;
+  margin: 1rem;
+}
+#principal #productosActuales, #ProductosNuevos #productosActuales {
+  display: flex;
+  align-items: center;
+}
+#principal #productosActuales label, #ProductosNuevos #productosActuales label {
+  margin-right: 0.5rem;
+  color: #00A63F;
+}
+#principal #productosActuales input[type=checkbox], #ProductosNuevos #productosActuales input[type=checkbox] {
+  margin-right: 1rem;
+}
+#principal #agregarProducto, #principal #agregarProductoNuevo, #ProductosNuevos #agregarProducto, #ProductosNuevos #agregarProductoNuevo {
+  margin: 1rem;
+}
+#principal #agregarProducto button, #principal #agregarProductoNuevo button, #ProductosNuevos #agregarProducto button, #ProductosNuevos #agregarProductoNuevo button {
+  background-color: #00A63F;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+#principal #agregarProducto input, #principal #agregarProductoNuevo input, #ProductosNuevos #agregarProducto input, #ProductosNuevos #agregarProductoNuevo input {
+  margin: 0.2rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#principal button, #ProductosNuevos button {
+  margin: 0.5rem 0;
+  background-color: #00A63F;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+#principal button.total, #ProductosNuevos button.total {
+  margin-top: 1rem;
+}
+#principal p#listaPedidos, #ProductosNuevos p#listaPedidos {
+  margin: 1rem 0;
+  list-style-type: none;
+}
+#principal p#listaPedidos li, #ProductosNuevos p#listaPedidos li {
+  margin: 0.5rem 0;
+  color: #00A63F;
+  font-weight: bold;
+}
+#principal #PrecioTotal, #ProductosNuevos #PrecioTotal {
+  font-size: 1.2rem;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

@@ -2,93 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Products Of The Sena</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="registro">
-        <h1>REGISTRESE</h1>
-        <label for="nom">Nombre Completo</label>
-        <input type="text" id="nom">
-        <p id="errNom"><span class="xRoja">&#10005;</span> Falta un nombre y dos apellidos</p>
-        <label for="passs">Contraseña</label>
-        <input type="password" id="passs">
-        <p id="errMayus"><span class="xRoja">&#10005;</span> Le falta una mayuscula</p>
-        <p id="passsValida" hidden><span class="chuloVerde">&check;</span> Contraseña valida</p>
-        <p id="errNums"><span class="xRoja">&#10005;</span> Le faltan tres numeros</p>
-        <button id="botR">Registrarse</button>
-    </div>
-    <div id="registroP" hidden>
-        <h1>Cree preguntas de confirmación</h1>
-        <label for="p1">Numero favorito</label>
-        <input id="p1" type="text">
-        <p id="errp1"></p>
-        <label for="p2">Animal favorito</label>
-        <input id="p2" type="text">
-        <p id="errp2"></p>
-        <label for="p3">Color favorito</label>
-        <input id="p3" type="text">
-        <p id="errp3"></p>
-        <button id="botRP">Confirmar</button>
-    </div>
-    <div id="captcha" hidden>
-        <h1>Captcha</h1>
-        <h3 id="capnum"></h3>
-        <input type="text" id="capinput">
-        <button id="capbot">Enviar</button>
-        <h2 id="caperr"></h2>
-    </div>
-    <div id="error" hidden>
-        <h1>Demasiados intentos fallidos</h1>
-    </div>
-    <div id="inicioDeSesion" hidden>
-        <h1>INICIO DE SESIÓN</h1>
-        <label for="nomIS">Nombre</label>
-        <input type="text" id="nomIS">
-        <p id="nomISErr"></p>
-        <label for="passsIS">Contraseña</label>
-        <input type="password" id="passsIS">
-        <p id="passsISErr"></p>
-        <button id="ISbot">Confirmar</button>
-        <p id="ISintentos"></p>
-        <a href="#" id="olviCon">Olvidé mi contraseña</a>
-    </div>
-    <div id="nomolvide" hidden>
-        <h1>RECUPERACIÓN DE CUENTA</h1>
-        <label for="nomRecu">Nombre</label>
-        <input type="text" id="nomRecu">
-        <p id="nomRecuErr"></p>
-        <button id="botRecu">Enviar</button>
+    <div class="container">
+        <div id="principal">
+            <h1>Sena CASA Products</h1>
+            <h2>Lista De Productos</h2>
 
+            <div id="productosActuales">
+                <label for="Producto1">Hamburguesa</label>
+                <input type="checkbox" id="Producto1" value="50000">
+
+                <label for="Producto2">Perro</label>
+                <input type="checkbox" id="Producto2" value="75000">
+            </div>
+
+            <button onclick="calcularProductos()">Confirmar producto</button>
+            <p id="listaPedidos"></p>
+
+            <button id="total" onclick="calcularDescuento()">Calcular Total</button>
+            <p id="PrecioTotal"></p>
+
+            <button id="agregarProducto" onclick="ProductosNuevos()">Agregar producto</button>
+        </div>
+        <div id="ProductosNuevos" style="display: none;">
+            <label for="nombreProductoNuevo">Nombre del producto</label>
+            <input type="text" id="nombreProductoNuevo" placeholder="Nombre">
+
+            <label for="precioProductoNuevo">Precio del Producto</label>
+            <input type="number" id="precioProductoNuevo" placeholder="Precio">
+
+            <button id="agregarProductoNuevo" onclick="agregarProductoNuevo()">Añadir Producto</button>
+
+            <button id="regresar" style="display: none;" onclick="regresarPrincipal()">Regresar</button>
+        </div>
     </div>
-    <div id="sesionIniciada" hidden>
-        <h1>Bienvenido al sistema</h1>
-    </div>
-    <div id="confP1" hidden>
-        <h1>Preguntas de confirmación</h1>
-        <label>Numero favorito</label>
-        <input id="inputp1" type="text">
-        <br>
-        <br>
-        <button id="butp1">Confirmar</button>
-    </div>
-    <div id="confP2" hidden>
-        <h1>Preguntas de confirmacion</h1>
-        <label>Animal favorito</label>
-        <input id="inputp2" type="text">
-        <br>
-        <br>
-        <button id="butp2">Confirmar</button>
-    </div>
-    <div id="confP3" hidden>
-        <h1>Preguntas de confirmacion</h1>
-        <label>Color favorito</label>
-        <input id="inputp3" type="text">
-        <br>
-        <br>
-        <button id="butp3">Confirmar</button>
-    </div>
-    <script src="js/script.js"></script>
+
+    <script src="main.js"></script>
 </body>
 </html>

@@ -2,29 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products Of The Sena</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="principal">
-        <h1>Productos Sena</h1>
-        <div>
-            <label for="">Perro</label>
-            <input type="checkbox" id="Producto1" value="valor"1>
-        </div>
-        <div>
-            <label for="">Hamburguesa</label>
-            <input type="checkbox" id="Producto2" value="2">
-        </div>
-        <br>
+        <h1>Sena CASA Products</h1>
+        <h2>Lista De Productos</h2>
 
-        <button onclick="calcularProductos()">Añadir Productos</button>
+        <div id="productosActuales">
+            <label for="Producto1">Hamburguesa</label>
+            <input type="checkbox" id="Producto1" value="50000">
+
+            <label for="Producto2">Perro</label>
+            <input type="checkbox" id="Producto2" value="75000">
+        </div>
+
+        <button onclick="calcularProductos()">Confirmar producto</button>
         <p id="listaPedidos"></p>
 
-        <button id="total">Calcular Total</button>
+        <button id="total" onclick="calcularDescuento()">Calcular Total</button>
         <p id="PrecioTotal"></p>
+
+        <button id="agregarProducto" onclick="ProductosNuevos()">Agregar producto</button>
+    </div>
+    <div id="ProductosNuevos" style="display: none;" class="pricipal">
+        <label for="nombreProductoNuevo">Nombre del producto</label>
+        <input type="text" id="nombreProductoNuevo" placeholder="Nombre">
+
+        <label for="precioProductoNuevo">Precio del Producto</label>
+        <input type="number" id="precioProductoNuevo" placeholder="Precio">
+
+        <button id="agregarProductoNuevo" onclick="agregarProductoNuevo()">Añadir Producto</button>
+
+        <button id="regresar" style="display: none;" onclick="regresarPrincipal()">Regresar</button>
     </div>
 
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
